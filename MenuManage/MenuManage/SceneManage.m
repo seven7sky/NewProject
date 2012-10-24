@@ -38,8 +38,8 @@
 	if ([director runningScene])
 	{
 		//加入过渡效果
-		[director replaceScene:
-		 [CCTransitionFlipX transitionWithDuration:1.0f scene:newScene]];
+		//[director replaceScene:[CCTransitionFlipX transitionWithDuration:1.0f scene:newScene]];
+		[director replaceScene:newScene];
 	} else
 	{
 		[director runWithScene:newScene];

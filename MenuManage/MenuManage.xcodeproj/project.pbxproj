@@ -138,6 +138,10 @@
 		8797A3C81626E899003D5D29 /* CreditsLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8797A3C71626E899003D5D29 /* CreditsLayer.m */; };
 		8797A3CC1626F7E8003D5D29 /* font.fnt in Resources */ = {isa = PBXBuildFile; fileRef = 8797A3CA1626F7E8003D5D29 /* font.fnt */; };
 		8797A3CD1626F7E8003D5D29 /* font.png in Resources */ = {isa = PBXBuildFile; fileRef = 8797A3CB1626F7E8003D5D29 /* font.png */; };
+		8797A3D81627C137003D5D29 /* baseLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8797A3D71627C137003D5D29 /* baseLayer.m */; };
+		8797A3DC1627C410003D5D29 /* sf-flyer.png in Resources */ = {isa = PBXBuildFile; fileRef = 8797A3DA1627C410003D5D29 /* sf-flyer.png */; };
+		8797A3DD1627C410003D5D29 /* buttonNormal.png in Resources */ = {isa = PBXBuildFile; fileRef = 8797A3DB1627C410003D5D29 /* buttonNormal.png */; };
+		8797A3DF1627CA05003D5D29 /* buttonSelected.png in Resources */ = {isa = PBXBuildFile; fileRef = 8797A3DE1627CA05003D5D29 /* buttonSelected.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -411,6 +415,11 @@
 		8797A3C71626E899003D5D29 /* CreditsLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreditsLayer.m; sourceTree = "<group>"; };
 		8797A3CA1626F7E8003D5D29 /* font.fnt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = font.fnt; sourceTree = "<group>"; };
 		8797A3CB1626F7E8003D5D29 /* font.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = font.png; sourceTree = "<group>"; };
+		8797A3D61627C137003D5D29 /* baseLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = baseLayer.h; sourceTree = "<group>"; };
+		8797A3D71627C137003D5D29 /* baseLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = baseLayer.m; sourceTree = "<group>"; };
+		8797A3DA1627C410003D5D29 /* sf-flyer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "sf-flyer.png"; path = "Resources/sf-flyer.png"; sourceTree = "<group>"; };
+		8797A3DB1627C410003D5D29 /* buttonNormal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonNormal.png; path = Resources/buttonNormal.png; sourceTree = "<group>"; };
+		8797A3DE1627CA05003D5D29 /* buttonSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = buttonSelected.png; path = Resources/buttonSelected.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -480,6 +489,9 @@
 		8797A2371626E7AF003D5D29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8797A3DE1627CA05003D5D29 /* buttonSelected.png */,
+				8797A3DA1627C410003D5D29 /* sf-flyer.png */,
+				8797A3DB1627C410003D5D29 /* buttonNormal.png */,
 				8797A3C91626F7E8003D5D29 /* font */,
 				8797A2381626E7AF003D5D29 /* Default.png */,
 				8797A23A1626E7AF003D5D29 /* Default-Landscape~ipad.png */,
@@ -856,6 +868,8 @@
 				8797A3C41626E879003D5D29 /* NewGameLayer.m */,
 				8797A3C61626E899003D5D29 /* CreditsLayer.h */,
 				8797A3C71626E899003D5D29 /* CreditsLayer.m */,
+				8797A3D61627C137003D5D29 /* baseLayer.h */,
+				8797A3D71627C137003D5D29 /* baseLayer.m */,
 			);
 			name = Class;
 			sourceTree = "<group>";
@@ -935,6 +949,9 @@
 				8797A38E1626E7B1003D5D29 /* ChangeLog in Resources */,
 				8797A3CC1626F7E8003D5D29 /* font.fnt in Resources */,
 				8797A3CD1626F7E8003D5D29 /* font.png in Resources */,
+				8797A3DC1627C410003D5D29 /* sf-flyer.png in Resources */,
+				8797A3DD1627C410003D5D29 /* buttonNormal.png in Resources */,
+				8797A3DF1627CA05003D5D29 /* buttonSelected.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1052,6 +1069,7 @@
 				8797A3C21626E869003D5D29 /* MenuLayer.m in Sources */,
 				8797A3C51626E879003D5D29 /* NewGameLayer.m in Sources */,
 				8797A3C81626E899003D5D29 /* CreditsLayer.m in Sources */,
+				8797A3D81627C137003D5D29 /* baseLayer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1155,6 +1173,7 @@
 				8797A3BB1626E7B1003D5D29 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

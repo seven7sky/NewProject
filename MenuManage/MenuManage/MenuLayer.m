@@ -28,11 +28,12 @@
 		[title runAction:action];
 		[self addChild:title];
 		//menu
-		CCMenuItemFont *newGame = [CCMenuItemFont itemWithString:@"New Game" target:self selector:@selector(onNewGame)];
+		//CCMenuItemFont *newGame = [CCMenuItemFont itemWithString:@"New Game" target:self selector:@selector(onNewGame)];
+		CCMenuItemImage *newGame = [CCMenuItemImage itemWithNormalImage:@"buttonNormal.png" selectedImage:@"buttonSelected.png"  disabledImage:@"buttonNormal.png"  target:self selector:@selector(onNewGame)];
 		CCMenuItemFont *credits = [CCMenuItemFont itemWithString:@"Credits" target:self selector:@selector(onCredits)];
 		CCMenu *menu = [CCMenu menuWithItems:newGame,credits, nil];
 		//为menu加入动画效果
-		float delayTime = 1.0f;
+		/*float delayTime = 1.0f;
 		for (CCMenuItemFont *element in [menu children])
 		{
 			element.scaleX = 0.0f;
@@ -43,7 +44,8 @@
 									nil];
 			delayTime += 0.5f;
 			[element runAction:menuAction];
-		}
+		}*///此段代码会引起app在频繁切换时stop，scaleX!=scaleY
+		
 		[menu alignItemsVerticallyWithPadding:40.0f];//设置Menu中的item的垂直间距
 		menu.position = ccp(screenSize.width*0.5f, screenSize.height*0.4f);
 		[self addChild:menu];
